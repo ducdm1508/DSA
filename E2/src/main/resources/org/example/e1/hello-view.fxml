@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.e1.StudentController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <GridPane hgap="10" vgap="10">
+    <Label text="Student ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="txtStudentID" promptText="Enter student ID" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="Full Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="txtFullName" promptText="Enter full name" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Math Score:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtMathScore" promptText="Enter Math score" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Physics Score:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="txtPhysicsScore" promptText="Enter Physics score" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="Chemistry Score:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="txtChemistryScore" promptText="Enter Chemistry score" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+  </GridPane>
+
+  <HBox spacing="10" alignment="CENTER">
+    <Button text="Add Student" onAction="#addStudent"/>
+    <Button text="Sort by Score" onAction="#sortByScore"/>
+  </HBox>
+
+  <TextArea fx:id="txtStudentList" editable="false" prefHeight="200"/>
+</VBox>
