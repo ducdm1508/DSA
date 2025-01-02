@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.transactionmanager.Controller.DashboardController"
+      spacing="20" style="-fx-padding: 20; -fx-alignment: center;" stylesheets="@../styles/dashboard.css">
+
+    <Label text="Monthly Transaction Overview" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <HBox spacing="15" alignment="center">
+        <ComboBox fx:id="monthComboBox" promptText="Select Month" styleClass="combo-box" />
+        <ComboBox fx:id="yearComboBox" promptText="Select Year" styleClass="combo-box" />
+        <Button text="Show Chart" onAction="#handleShowChart" styleClass="button" />
+    </HBox>
+
+    <BarChart fx:id="barChart" VBox.vgrow="ALWAYS" prefWidth="900" prefHeight="500" styleClass="bar-chart">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" label="Days of the Month" tickLabelRotation="45" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" label="Transaction Amount ($)" />
+        </yAxis>
+    </BarChart>
+
+    <HBox spacing="20" alignment="center">
+        <HBox spacing="5" alignment="center">
+            <Rectangle width="20" height="20" style="-fx-fill: green;" />
+            <Label text="Income" style="-fx-font-size: 14px;" />
+        </HBox>
+        <HBox spacing="5" alignment="center">
+            <Rectangle width="20" height="20" style="-fx-fill: red;" />
+            <Label text="Expenses" style="-fx-font-size: 14px;" />
+        </HBox>
+    </HBox>
+</VBox>

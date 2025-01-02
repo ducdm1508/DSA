@@ -1,0 +1,46 @@
+.hbox {
+    -fx-spacing: 5;
+    -fx-padding: 5 10;
+    -fx-alignment: top-left;
+}
+
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #1e90ff;
+    -fx-border-radius: 5;
+    -fx-padding: 3;
+    -fx-font-size: 12px;
+    -fx-min-width: 80px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #6495ed;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #1e90ff, #6495ed);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 3 8;
+    -fx-border-radius: 5;
+    -fx-min-width: 100px;
+    -fx-cursor: hand;
+}
+
+.bar-chart .axis .tick-lable {
+    -fx-font-size: 10px;
+}
+
+.chart-bar-legend-symbol {
+    -fx-background-color: green, red;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: green;
+    -fx-bar-width: 20px;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: red;
+    -fx-bar-width: 20px;
+}

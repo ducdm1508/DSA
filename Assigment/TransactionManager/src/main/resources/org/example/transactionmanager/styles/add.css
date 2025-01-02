@@ -1,0 +1,61 @@
+VBox {
+    padding: 20px;
+    spacing: 15px;
+    alignment: center;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4CAF50;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+Label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+TextField, ComboBox {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+DatePicker {
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+Button {
+    -fx-font-size: 14px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+Button:hover {
+    -fx-background-color: #45a049;
+}
+
+GridPane {
+    padding: 20px;
+    grid-lines-visible: false;
+    alignment: center;
+}
+
+GridPane .label, GridPane .text-field, GridPane .combo-box {
+    -fx-padding: 5px;
+}
