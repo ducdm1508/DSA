@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox>
+            <HBox spacing="10">
+                <TextField prefHeight="40.0" prefWidth="261.0" promptText="Search ..." />
+                <Button fx:id="searchButton" prefHeight="40.0" prefWidth="54.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SEARCH" size="20px" />
+                    </graphic>
+                </Button>
+                <Button fx:id="filterButton" prefHeight="40.0" prefWidth="54.0">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="FILTER" size="20px" />
+                    </graphic>
+                </Button>
+            </HBox>
+            <TableView prefHeight="438.0" prefWidth="853.0" BorderPane.alignment="CENTER">
+                <columns>
+                    <TableColumn prefWidth="122.0" text="Name-Computer" />
+                    <TableColumn prefWidth="77.0" style="-fx-text-align: center;" text="Status" />
+                    <TableColumn prefWidth="79.0" text="User " />
+                    <TableColumn prefWidth="75.0" text="Location" />
+                    <TableColumn prefWidth="94.0" text="Time-Start" />
+                    <TableColumn prefWidth="87.0" text="Usage-Time" />
+                    <TableColumn prefWidth="81.0" text="Time_End" />
+                    <TableColumn prefWidth="86.0" text="Action" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>
